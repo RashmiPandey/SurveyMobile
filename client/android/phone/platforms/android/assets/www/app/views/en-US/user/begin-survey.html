@@ -1,0 +1,101 @@
+<ion-view view-title="Step 1/2" class="begin" >
+	<!-- <ion-nav-bar>
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-arrow-left-c"></i> Store Menu
+	  </ion-nav-back-button>
+	</ion-nav-bar> -->
+    <ion-content>
+        
+        <!-- <ion-list>
+         <ion-item >
+		  	Carefour city 23 Rues de Lombards Paris France
+		  </ion-item>
+		  <ion-item >
+		  	<a href="#/begin-questionare">Questionarre 1</a>
+		  </ion-item>
+		  <ion-item >
+		  	<a href="#/begin-questionare">Questionarre 2</a>
+		  </ion-item>
+		  <ion-item >
+		  	<a href="#/begin-questionare">Questionarre 3</a>
+		  </ion-item>
+		</ion-list> 
+ --> 
+ <header>
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <a href="#" class="logo">
+                            <img src="img/logo.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 pull-center">
+                        <p>MIRROW</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="top-header">
+        	<div class="container-fluid">
+                <div class="row">
+                	<div class="col-sm-12 col-xs-12">
+                    <a href="#/store-details">	<span class="pull-left"><i class="ion-arrow-left-c"></i> Store Menu</span></a><span>Step 1/2</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="routes-content">
+        	<div class="r-header">
+            	<div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                        	<span style="text-transform: none;color:#000;font-size:14px;">Carefour City 23  Rue des leombards 7500 franceparis</span>
+                        </div>
+                     </div>
+                </div>    
+            </div>
+            <ion-list>
+         <!-- <ion-item >
+		  	Carefour city 23 Rues de Lombards Paris France
+		  </ion-item> -->
+		  <!-- <ion-item >
+		  	<a href="#/begin-questionare">Questionarre 1</a>
+		  </ion-item>
+		  <ion-item >
+		  	<a href="#/begin-questionare">Questionarre 2</a>
+		  </ion-item>
+		  <ion-item >
+		  	<a href="#/begin-questionare">Questionarre 3</a>
+		  </ion-item> -->
+           <ion-list >   
+                <ion-item  ng-repeat="survey in surveyResult">          
+                         <a href="#" ng-click="doSurvey(survey)">{{survey.Survey_name}} </a>
+                   </ion-item>
+         </ion-list>
+		</ion-list>
+            <!-- <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 no-padd">
+                            <div class="rt-list">
+                                <ul>
+                                	<a href="#">
+                                    <li style="font-size:14px;">
+                                    
+                                        Questionaire 1 <i class="fa fa-angle-right"></i>
+                                    </li>
+                                    </a>
+                                    
+                                </ul>
+                            </div>
+                       </div>
+                    </div>
+                </div>         -->    
+        </section>
+        
+      <footer>	   
+    	<script src="bootstrap/dist/js/bootstrap.js" type="text/javascript"></script>      
+      
+      </footer>
+      
+    </ion-content>
+</ion-view>

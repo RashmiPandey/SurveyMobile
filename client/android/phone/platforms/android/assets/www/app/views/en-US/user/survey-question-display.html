@@ -1,0 +1,122 @@
+<ion-view view-title="Step 2/2" class="questionare">
+	<!-- <ion-nav-bar>
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-arrow-left-c"></i> Step1
+	  </ion-nav-back-button>
+	</ion-nav-bar> -->
+   <!--  <ion-content>
+         <form class="list">
+        <ion-list>
+          <ion-item >
+		  	{{question.The_question}}
+		 </ion-item> 		 
+		  <ion-list> 
+			  <ion-item ng-repeat="option in options">		  				
+				<ion-list ng-show="plain == true">
+				<label class="item item-input">					
+					<input type="text" placeholder="Type your answer here " data-ng-model="questionare.answer">
+				</label>
+				</ion-list>				
+				<ion-list ng-show="isoption == true || yes_no == true">
+					<ion-radio data-ng-model="questionare.radioanswer" ng-value="option.id">{{option.answer}}</ion-radio>
+				</ion-list>	
+				<ion-list ng-if="imageoption == true">
+				<ion-radio data-ng-model="questionare.radioanswer" ng-value="option.id"><img src="{{option.answer}}" width=120 height=120/>	</ion-radio>
+						
+				</ion-list>	
+				<ion-list   ng-show="camera == true" > 
+					<ion-item>
+						<span ng-click="takePicture()">	Click here to Take a picture</span>
+			 		</ion-item> 
+		 			<ion-item >
+		  	 		<img id="myImage" width=200 height=200/>
+		  			</ion-item>
+				</ion-list>			
+			  </ion-item> 
+			
+		</ion-list> 
+		</form>
+		<ion-item >
+		  	 <button ng-click="getNextQuestion()">Next</button>			 			 	 
+		  </ion-item>		
+    </ion-content> -->
+    <ion-content>
+    <header>
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <a href="#" class="logo">
+                            <img src="img/logo.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 pull-center">
+                        <p>MIRROW</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="top-header">
+        	<div class="container-fluid">
+                <div class="row">
+                	<div class="col-sm-12 col-xs-12">
+                    	<span class="pull-left"><i class="ion-arrow-left-c"></i>Step 1</span> <span>Step 2/2</span><!-- <span class="pull-right stp2-flag"><i class="ion-arrow-right-c"></i></span> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="stp2-question" ><!-- ng-controller="SurveyCtrl" -->
+        	<div class="container-fluid">
+            	<div class="row">
+                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padd">
+                    	<form class="list">
+        <ion-list>
+          <ion-item >
+		  	{{question.The_question}}
+		 </ion-item> 		 
+		  <ion-list> 
+			  <ion-item ng-repeat="option in options">		  				
+				<ion-list ng-show="plain == true">
+				<label class="item item-input">					
+					<input type="text" placeholder="Type your answer here " data-ng-model="questionare.answer">
+				</label>
+				</ion-list>				
+				<ion-list ng-show="isoption == true || yes_no == true">
+					<ion-radio data-ng-model="questionare.radioanswer" ng-value="option.id">{{option.answer}}</ion-radio>
+				</ion-list>	
+				<ion-list ng-if="imageoption == true">
+				<ion-radio data-ng-model="questionare.radioanswer" ng-value="option.id"><img src="{{option.answer}}" width=120 height=120/>	</ion-radio>						
+				</ion-list>	
+				<ion-list   ng-show="camera == true" > 
+					<ion-item>
+							<span ng-click="takePicture()">	Click here to Take a picture</span>
+				 	</ion-item> 
+				 	<ion-item >
+				  	 <img id="myImage" width=200 height=200/>
+				  </ion-item>
+				</ion-list>
+
+			  </ion-item> 
+			
+		</ion-list> 
+		</form>
+			<ion-item >
+		  	 <button ng-click="getNextQuestion()">Next</button>			 			 	 			 
+		  </ion-item>
+		  	
+                    </div>
+                </div>
+            </div>
+        </div>
+      <footer>	   
+    	<!-- <script src="bootstrap/dist/js/bootstrap.js" type="text/javascript"></script> -->   
+        <script type="text/javascript">
+		$(function() {
+					$('.sel-lis li').on('click', function(){
+					$('li.selected').removeClass('selected');
+					$(this).addClass('selected');
+				});
+			});
+		</script>  
+      </footer>
+     </ion-content>
+</ion-view>

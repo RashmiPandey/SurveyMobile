@@ -1,0 +1,104 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<form class="form-horizontal" name="careGiverForm"
+				data-ng-submit="SaveCareGiver(careGiverForm,CareGiverDetails)">
+				<fieldset>
+					<div id="legend">
+						<legend>CareGiver</legend>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="firstName"
+								data-ng-model="CareGiverDetails.firstName"
+								placeholder="firstName" class="form-control input-lg">
+						</div>
+					</div>
+
+					<br />
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="lastname"
+								data-ng-model="CareGiverDetails.lastname" placeholder="lastname"
+								class="form-control input-lg">
+						</div>
+					</div>
+
+					<br />
+
+					<div class="control-group">
+						<div class="controls">
+							<input type="email" id="email"
+								data-ng-model="CareGiverDetails.email" placeholder="email"
+								class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+
+					<div class="control-group">
+						<div class="controls">
+							<input type="date" id="dateOfBirth"
+								data-ng-model="CareGiverDetails.dateOfBirth"
+								placeholder="dateOfBirth" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+
+					<div class="control-group">
+						<div class="controls">
+							<input type="password" id="password"
+								data-ng-model="CareGiverDetails.password" placeholder="password"
+								class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="yearOfExperience"
+								data-ng-model="CareGiverDetails.yearOfExperience"
+								placeholder="year Of Experience" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+
+
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="languageKnown"
+								data-ng-model="CareGiverDetails.languageKnown"
+								placeholder="languageKnown" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="description"
+								data-ng-model="CareGiverDetails.description"
+								placeholder="description" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="education"
+								data-ng-model="CareGiverDetails.education"
+								placeholder="education" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+
+					<div class="control-group">
+						<div class="controls">
+							<button class="btn btn-success" type="submit">Register &
+								Create CareGiver</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+
+		</div>
+	</div>
+</div>

@@ -1,0 +1,22 @@
+<ion-view view-title="Step 2/2" class="profile">
+	<ion-nav-bar>
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-arrow-left-c"></i> Step1
+	  </ion-nav-back-button>
+	</ion-nav-bar>
+    <ion-content>
+        
+        <ion-list>
+          <ion-item >
+		  	<span ng-click="takePicture()">	Click here to Take a picture</span>		  	
+		  </ion-item>
+		  <ion-item >
+		  	 <img id="myImage" width=200 height=200/>
+		  </ion-item> 
+		  
+		  <ion-item >
+		  	 <button ng-click="getNextQuestion()">Start Survey</button>
+		  </ion-item> 
+		</ion-list>      
+    </ion-content>
+</ion-view>

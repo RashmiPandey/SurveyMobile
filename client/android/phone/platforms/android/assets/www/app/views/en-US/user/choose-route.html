@@ -1,0 +1,16 @@
+<ion-view view-title="Routes" class="profile">
+  <ion-content>
+  <ion-nav-bar>
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-arrow-left-c"></i> Profile
+	  </ion-nav-back-button>
+	</ion-nav-bar>
+        <h3 class="title">Select Routes</h3>
+         <ion-list>
+				<ion-item  ng-repeat="route in routesList">		  	
+					<a href="#/choose-store">{{route.route_name}} </a>
+				</ion-item>		 
+			</ion-list>
+  </ion-content>
+</ion-view>
+

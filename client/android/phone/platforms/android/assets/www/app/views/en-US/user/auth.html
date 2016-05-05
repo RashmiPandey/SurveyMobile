@@ -1,0 +1,45 @@
+<ion-view view-title="Welcome" class="auth">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-chevron-left"></i> Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+         <!-- <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <a href="#" class="logo">
+                            <img src="img/logo.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 pull-center">
+                        <p>MIRROW</p>
+                    </div>
+                </div>
+            </div>
+        </header> -->
+        <div class="container">
+            <div class="content">
+                <h3 class="title text-center">Sign Up</h3>
+                <form class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Email</span>
+                        <input type="text" data-ng-model="$parent.email" placeholder="email@example.com">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Password</span>
+                        <input type="password" data-ng-model="$parent.password" placeholder="**********">
+                    </label>
+                </form>
+                <div>
+                    <p class="padding-top text-center">
+                        By clicking Next you agree to <br>
+                        <strong>Terms of Use</strong> and <strong>Privacy Policy</strong>.
+                    </p>
+                    <button class="button button-block button-clear button-positive" data-ng-click="emailAndPassword()">Create an Account</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

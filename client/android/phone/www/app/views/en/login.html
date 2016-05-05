@@ -1,0 +1,49 @@
+
+<style>
+ 
+body {
+	padding-top: 50px;
+}
+</style> 
+<div class="container" >
+	<div class="row">
+		<div class="col-md-4 col-md-offset-4">
+			<div class="well">
+				<form role="form" name="loginform"
+					data-ng-submit="doLogin(loginform,userDetails)">
+					<div class="form-group">
+						<label class="control-label">E-Mail</label> <input
+							class="form-control" id="inputSuccess1"
+							data-ng-model="userDetails.email"
+							placeholder="sloan@gmail.com" type="text">
+					</div>
+					<div class="form-group">
+						<label for="inputPassword" class="control-label">Password</label>
+						<input class="form-control" id="inputSuccess2"
+							data-ng-model="userDetails.passWord" placeholder="******"
+							type="password">
+					</div>
+					<div class="form-group">
+
+						<button type="submit" class="btn btn-primary btn-block">Login</button>
+
+					</div>
+
+					<div class="row">
+						<div class="col-xs-6 col-md-8">
+							<div class="checkbox">
+								<label> <input checked="checked" type="checkbox">
+									Remember me
+								</label>
+							</div>
+						</div>
+						<div class="col-xs-6 col-md-4">
+							<button type="button" data-ng-click="signUpLocation()" class="btn btn-link  pull-right small">Register
+								new Account</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

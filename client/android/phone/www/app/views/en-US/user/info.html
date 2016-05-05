@@ -1,0 +1,50 @@
+<ion-view view-title="Getting Started" class="info">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-chevron-left"></i> Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="container">
+            <div class="content">
+                <h3 class="title text-center">Basic Information</h3>
+                <form class="list">
+                    <label class="item item-input">
+                        <span class="input-label">First Name</span>
+                        <input type="text" placeholder="John" data-ng-model="$parent.firstName">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Last Name</span>
+                        <input type="text" placeholder="Doe" data-ng-model="$parent.lastName">
+                    </label>
+                </form>
+                <form class="list">
+                    <label class="item item-input">
+                        <span class="input-label">Date of Birth</span>
+                        <input type="date" placeholder="YYYY-MM-DD" data-ng-model="$parent.birthday">
+                    </label>
+                    <label class="item item-input">
+                        <span class="input-label">Phone Number</span>
+                        <input type="tel" data-ng-model="$parent.tel">
+                    </label>
+                </form>
+                <div class="list">
+                    <label class="item item-input item-select">
+                        <span class="input-label">Gender</span>
+                        <select data-ng-model="$parent.gender" data-ng-init="$parent.gender='FEMALE'">
+                            <option value="FEMALE">Female</option>
+                            <option value="MALE">Male</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="text-center">
+                    <p class="padding-top">
+                        By clicking Next you agree to <br>
+                        <strong>Terms of Use</strong> and <strong>Privacy Policy</strong>.
+                    </p>
+                    <button class="button button-clear button-positive" data-ng-click="getInfo()">Submit</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

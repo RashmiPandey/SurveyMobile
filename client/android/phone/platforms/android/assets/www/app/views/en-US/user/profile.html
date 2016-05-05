@@ -1,0 +1,22 @@
+<ion-view view-title="Profile" hide-back-button="true">
+  <ion-content>
+  
+        <section id="selection-mode">
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                        <h3>Select Connection Mode :</h3>
+                        <ion-toggle ng-model="connectionMode" toggle-class="toggle-calm" ng-change="SurveyCreate()">Online</ion-toggle>
+                    </div>
+                </div>	
+            </div>
+        </section>
+    <div class="content has-header">
+      <div class="padding">
+         	<a href="#/choose-route" class="button button-clear button-positive">                        	
+                            <h4>Start</h4>
+                            </a>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

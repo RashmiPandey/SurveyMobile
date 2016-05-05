@@ -1,0 +1,49 @@
+<ion-view view-title="Survey" class="login">
+    <ion-content>
+      <header>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                       
+                    </div>
+                    <div class="col-sm-6 col-xs-6 pull-center">
+                        <p><h1>SURVEY</h1></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container">
+            <div class="content">
+                <div class="logo text-center">
+                    <img src="img/logo.svg" alt="Geppetto">
+                </div>
+                <form class="list">
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Email</span>
+                        <input type="email" data-ng-model="$parent.login.email" placeholder="email@example.com">
+                    </label>
+                    <label class="item item-input item-stacked-label">
+                        <span class="input-label">Password</span>
+                        <input type="password" data-ng-model="$parent.login.password" placeholder="**********">
+                    </label>
+                </form>
+                <div class="sign-in text-center">
+                    <button class="button button-block button-outline button-positive" data-ng-click="signIn(login)">Sign In</button>
+                    <!-- <p>OR</p>
+                    <button class="button button-positive button-outline" data-ng-click="facebookLogin()">
+                        <i class="icon ion-social-facebook"></i>
+                    </button>
+                    <button class="button button-positive button-outline" data-ng-click="GPlusLogin()">
+                        <i class="icon ion-social-googleplus-outline"></i>
+                    </button> -->
+                </div>
+                <hr>
+                <div class="sign-up text-center">
+                    <p>Don't have an account?</p>
+                    <button class="button button-block button-positive button-clear" data-ng-click="go('auth')">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

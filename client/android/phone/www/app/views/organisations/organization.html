@@ -1,0 +1,19 @@
+<ion-view view-title="Sign In" hide-back-button="false">
+  <ion-content>
+    <div class="content">
+      <div class="padding">
+        <h3 class="title">Choose an organization</h3>
+      </div>
+      <div class="padding list">
+        <label class="ionic item item-radio" data-ng-repeat="o in organizations">
+          <input type="radio" name="organization" data-ng-model="$parent.organization" data-ng-value="o">
+          <span class="ionic item-content">{{o.organisationName}}</span>
+          <i class="ionic radio-icon ion-checkmark"></i>
+        </label>
+      </div>
+      <div class="padding">
+        <button class="button button-block button-positive" data-ng-click="submit()">Submit</button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
