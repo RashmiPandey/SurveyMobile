@@ -1,0 +1,106 @@
+<ion-view view-title="Stores" class="profile">
+	<!-- <ion-nav-bar>
+	  <ion-nav-back-button class="button-clear">
+	    <i class="ion-arrow-left-c"></i> Routes
+	  </ion-nav-back-button>
+	</ion-nav-bar> -->
+   <!--  <ion-content> -->
+        <!-- <ion-list>
+          <ion-item >
+		  	C
+		  </ion-item>
+		  <ion-item >
+		  	<a href="#/store-details">Carrefour Store ></a>
+		  </ion-item>
+		   <ion-item >
+		  	<a href="#/store-details">Colruyt store ></a>
+		  </ion-item>
+		  <ion-item >
+		 	 W
+		  </ion-item>
+		   <ion-item >
+		  	<a href="#/store-details">Walmart </a>
+		  </ion-item>
+		</ion-list> -->
+		 <!-- <ion-list>
+		  <ion-item  ng-repeat="route in storeList">		  	
+		  	<a href="#/store-details">{{route.store_name}}</a>
+		  </ion-item>		   
+		</ion-list>       -->
+    <!-- </ion-content> -->
+    
+    <ion-content>
+        <!-- 
+        <ion-list >       
+		  <ion-item  ng-repeat="route in routesList">		  	
+		  	<a href="#/route-details">{{route.route_name}} </a>
+		  </ion-item>
+		</ion-list> -->
+		<header>
+        	<div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-6">
+                        <a href="#" class="logo">
+                            <img src="img/logo.jpg" alt=""/>
+                        </a>
+                    </div>
+                    <div class="col-sm-6 col-xs-6 pull-center">
+                        <p>MIRROW</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section id="top-header">
+        	<div class="container-fluid">
+                <div class="row">
+                	<div class="col-sm-12 col-xs-12">
+                    	<a href="#/choose-route"><span class="pull-left"><i class="ion-arrow-left-c"></i> Main Menu</span></a><span>Stores</span>
+                    	<!-- <ion-nav-bar>
+	  <ion-nav-back-button class="col-sm-12 col-xs-12">
+	    <i class="ion-arrow-left-c"></i> Main Menu
+	  </ion-nav-back-button>
+	</ion-nav-bar> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="routes-content">
+        	<div class="r-header">
+            	<div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12">
+                        	Select a Store
+                        </div>
+                     </div>
+                </div>    
+            </div>
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12 col-xs-12 no-padd">
+                            <div class="rt-list">
+                               
+                                        <!-- Routes1 <i class="fa fa-angle-right"></i> -->
+                                        <ion-list>
+		  								<ion-item  ng-repeat="route in storeList">		  	
+		  								<a href="#/store-details">{{route.store_name}}</a>
+		 								</ion-item>		 
+		 								<ion-item>		  	
+		  								<h1>GAT</h1>
+		 								</ion-item>		 
+		 								  
+										</ion-list>
+                                <!-- <ion-list >       
+		  <ion-item  ng-repeat="route in routesList">		  	
+		  	<a href="#/route-details">{{route.route_name}} </a>
+		  </ion-item>
+		</ion-list> -->
+                            </div>
+                       </div>
+                    </div>
+                </div>            
+        </section>
+      <footer>	   
+    	<!-- <script src="bootstrap/dist/js/bootstrap.js" type="text/javascript"></script> -->      
+      </footer>
+    </ion-content>
+</ion-view>

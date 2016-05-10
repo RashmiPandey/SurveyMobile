@@ -1,0 +1,74 @@
+<div class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<form class="form-horizontal" name="signupform"
+				data-ng-submit="doSignUp(signupform,userSignUpDetails)">
+				<fieldset>
+					<div id="legend">
+						<legend class="">Register</legend>
+					</div>
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="firstname"
+								data-ng-model="userSignUpDetails.firstName"
+								placeholder="FirstName" class="form-control input-lg">
+						</div>
+					</div>
+
+					<br />
+					<div class="control-group">
+						<div class="controls">
+							<input type="text" id="lastname"
+								data-ng-model="userSignUpDetails.lastName"
+								placeholder="LastName" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+					<div class="control-group">
+						<div class="controls">
+							<input type="email" id="email"
+								data-ng-model="userSignUpDetails.email" placeholder="EMail"
+								class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+					<div class="item">
+						<label for="usertype">Type Of User </label> <select
+							style="width: 100%;" id="campaigntype"
+							data-ng-model="userSignUpDetails.userType" class="form-control"
+							required="required">
+							<option value="" selected="selected">Select the Type</option>
+							<option value="CUSTOMER">CUSTOMER</option>
+							<option value="CAREGIVER">CAREGIVER</option>
+						</select>
+					</div>
+
+					<br />
+					<div class="control-group">
+						<div class="controls">
+							<input type="number" id="phonenumber"
+								data-ng-model="userSignUpDetails.phoneNumber"
+								placeholder="PhoneNumber" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+					<div class="control-group">
+						<div class="controls">
+							<input type="password" id="password"
+								data-ng-model="userSignUpDetails.passWord"
+								placeholder="Password" class="form-control input-lg">
+						</div>
+					</div>
+					<br />
+					<div class="control-group">
+						<!-- Button -->
+						<div class="controls">
+							<button class="btn btn-success" type="submit">Next</button>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+
+		</div>
+	</div>
+</div>

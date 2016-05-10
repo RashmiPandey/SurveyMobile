@@ -1,0 +1,61 @@
+{
+    "createList": [
+        {
+            
+            "Id": 1,
+            "Survey_name": "surveyName1",
+            "Survey_description": "survey_description1",
+            "Survey_notes": "surveyNotes1",
+            "Client_name": "Clinet_name1",
+            "Client_id": 1,
+            "Store_id": 1,
+            "Product_name": "product_name2",
+            "Product_id": 1,
+            "Country_name": "India1",
+            "Country_id": 1
+        },
+        {
+            "Id": 2,
+            "Survey_name": "surveyName2",
+            "Survey_description": "survey_description2",
+            "Survey_notes": "surveyNotes2",
+            "Client_name": "Clinet_name2",
+            "Client_id": 2,
+            "Store_id": 2,
+            "Product_name": "product_name2",
+            "Product_id": 2,
+            "Country_name": "India2",
+            "Country_id": 2
+        },
+        {
+            "Id": 3,
+            "Survey_name": "surveyName3",
+            "Survey_description": "survey_description3",
+            "Survey_notes": "surveyNotes3",
+            "Client_name": "Clinet_name3",
+            "Client_id": 3,
+            "Store_id": 3,
+            "Product_name": "product_name3",
+            "Product_id": 3,
+            "Country_name": "India3",
+            "Country_id": 3
+        }
+    ],
+    "deleteList": [
+        {
+            "Id": 3,
+            "Survey_name": "surveyName3",
+            "Survey_description": "survey_description3",
+            "Survey_notes": "surveyNotes3",
+            "Client_name": "Clinet_name3",
+            "Client_id": 3,
+            "Store_id": 3,
+            "Product_name": "product_name3",
+            "Product_id": 3,
+            "Country_name": "India3",
+            "Country_id": 3
+        },
+        {},
+        {}
+    ]
+}

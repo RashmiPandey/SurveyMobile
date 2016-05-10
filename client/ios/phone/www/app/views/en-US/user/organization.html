@@ -1,0 +1,27 @@
+<ion-view view-title="Getting Started" class="organization">
+    <ion-nav-bar class="bar-light">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-chevron-left"></i> Back
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+        <div class="container">
+            <div class="content">
+                <h3 class="title text-center">Choose an organization</h3>
+                <form class="list">
+                    <label class="ionic item item-radio" data-ng-repeat="o in organizations">
+                        <input type="radio" name="organization" data-ng-model="$parent.$parent.organization"
+                               data-ng-value="o">
+                        <span class="ionic item-content">{{o.organisation_name}}</span>
+                        <i class="ionic radio-icon ion-checkmark"></i>
+                    </label>
+                </form>
+                <div class="text-center">
+                    <button class="button button-clear button-positive" data-ng-click="getOrganization()">
+                        <span>Choose</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

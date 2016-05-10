@@ -1,0 +1,42 @@
+<ion-view view-title="Begin" class="profile">
+    <ion-content>
+        <div id="container" >
+        	<div class="content">
+            	<div class="row">
+                	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 no-padd">
+                    	<form class="list">
+				          <ion-item >
+						  	{{question.The_question}}
+						 </ion-item> 		 
+						  <ion-list> 
+							  <ion-item ng-repeat="option in options">		  				
+								<ion-list ng-show="plain == true">
+								<label class="item item-input">					
+									<input type="text" placeholder="Type your answer here " data-ng-model="questionare.answer">
+								</label>
+						</ion-list>				
+								<ion-list ng-show="isoption == true || yes_no == true">
+									<ion-radio data-ng-model="questionare.radioanswer" ng-value="option.id">{{option.answer}}</ion-radio>
+								</ion-list>	
+								<ion-list ng-if="imageoption == true">
+								<ion-radio data-ng-model="questionare.radioanswer" ng-value="option.id"><img src="{{option.answer}}" width=120 height=120/>	</ion-radio>						
+								</ion-list>	
+								<ion-list   ng-show="camera == true" > 
+									<ion-item>
+											<span ng-click="takePicture()">	Click here to Take a picture</span>
+								 	</ion-item> 
+								 	<ion-item >
+								  	 <img id="myImage" width=200 height=200/>
+								  </ion-item>
+							</ion-list>
+					  </ion-item> 
+			</form>
+			<ion-item >
+		  	 <button ng-click="getNextQuestion()">Next</button>			 			 	 			 
+		  </ion-item>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </ion-content>
+</ion-view>

@@ -1,0 +1,18 @@
+<ion-view view-title="Profile" class="profile">
+ 	<ion-nav-bar class="bar-light">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-chevron-left"></i> Home
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+       <div class="container">
+            <div class="content">
+                <h3 class="title text-center">Select Connection Mode :</h3>
+                        <ion-toggle ng-model="connectionMode" toggle-class="toggle-calm" ng-change="SurveyCreate()">Online</ion-toggle>
+				<a href="#/choose-route" class="button button-clear button-positive">                        	
+                  <h4>Start</h4>
+                </a>                        
+            </div>
+        </div>
+    </ion-content>
+</ion-view>

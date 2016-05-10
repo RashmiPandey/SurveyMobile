@@ -1,0 +1,19 @@
+<ion-view view-title="Begin" class="profile">
+ 	<ion-nav-bar class="bar-light">
+        <ion-nav-back-button class="button-clear">
+            <i class="ion-chevron-left"></i> Start
+        </ion-nav-back-button>
+    </ion-nav-bar>
+    <ion-content>
+       <div class="container">
+            <div class="content">
+                <h3 class="title text-center">Select Survey</h3>
+                <form class="list" ng-repeat="survey in surveyResult">
+                   <a data-ng-click="doSurvey(survey)" class="item item-icon-right">
+                       {{survey.Survey_name}}
+                    </a>
+                </form>
+            </div>
+        </div>
+    </ion-content>
+</ion-view>
