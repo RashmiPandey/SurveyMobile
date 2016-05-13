@@ -8,6 +8,7 @@ app.service("surveyService", ['$log', '$location','surveyFactory','$rootScope','
   var self = this;
   
   var survey = {};
+   var routesList = [];
   var Questions = [];
   var QuestionOptions = [];
   var surveyResultrecords = [];
@@ -293,7 +294,7 @@ app.service("surveyService", ['$log', '$location','surveyFactory','$rootScope','
         });*/
         console.log("User table -1----values"+userResult);//+$rootScope.userId);
         return userResult;
-    }
+    } 
  this .insertClient=function(){
         var insert_client_query="";
         var clientResult="";
@@ -326,8 +327,6 @@ app.service("surveyService", ['$log', '$location','surveyFactory','$rootScope','
                  insert_survey_query = "INSERT INTO survey VALUES(?,?,?,?,?,?,?,?,?,?,?)";
                 surveyResult = surveyFactory.execute($rootScope.db,insert_survey_query,[id,sName,sDescription,sNotes,cName,cId,pName,pId,cpuntryName,countryId,sId]);
                 console.log("survey table -----values"+surveyResult);
-
-
     }
 
 

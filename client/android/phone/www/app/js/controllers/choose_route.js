@@ -13,14 +13,48 @@
  *
  */
 
-app.controller('choose_route', ['$scope', '$rootScope', '$location', '$state', '$window', '$q', '$http', '$ionicPopup', 'RestURL', 'Settings','surveyService','$timeout','surveyFactory',
-    function ($scope, $rootScope, $location, $state, $window, $q, $http, $ionicPopup, RestURL,Settings, surveyService,$timeout,surveyFactory) {
+app.controller('choose_route', ['$scope', '$rootScope', '$location', '$state', '$window', '$q', '$http', '$ionicPopup', 'RestURL', 'Settings','surveyService','$timeout','surveyService','surveyFactory',
+    function ($scope, $rootScope, $location, $state, $window, $q, $http, $ionicPopup, RestURL,Settings, surveyService,$timeout,surveyService,surveyFactory) {
         var self = $scope;
         self.routesList ={};
         self.init = function(){
           console.log("--------choose route----");
-           self.routesList = surveyFactory.getRoutes();
-           console.log("-------------choose route value"+angular.toJson(self.routesList));
+          //var URL = 'http://localhost:8080/SurveyBuilder/Route/get_all_route_for_desktop';
+          var URL=RestURL.baseURL+'Route/get_all_route_for_desktop';
+      	$http({method: 'GET', url: URL
+	        })
+            .success(function(result){ 
+				console.log( "Getting all Route List---" +JSON.stringify(result));	
+				self.routesList = result;
+				console.log("-------------choose route value---"+angular.toJson(self.routesList));
+			})
+	        .error(function (error, status){
+				console.log(error+status); 
+			});
         };
+        
+        
+        
+        self.getStoreByRouteId = function(route){
+        	console.log("-----------routes-----------"+angular.toJson(route));
+        	var URL=RestURL.baseURL+'Store/get_all_store_by_route_id/'+route.id;
+         	$http({method: 'GET', url: URL
+   	        })
+               .success(function(result){
+   				console.log( "Storeslisted by  Route ID---" +JSON.stringify(result));	
+   				surveyService.routesList= result;
+   				$location.url('/choose-store');
+   				console.log("Listing Store by route ID  completed ");									
+   			})
+   	        .error(function (error, status){
+   				console.log(error+status); 
+   			});
+         	           
+           
+        };
+        
+        
+        
+        
         self.init();
 }]);
