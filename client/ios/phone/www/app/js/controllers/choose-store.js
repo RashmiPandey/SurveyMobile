@@ -19,7 +19,8 @@ app.controller('choose_store', ['$scope', '$rootScope', '$location', '$state', '
         self.storeList ={};
         self.init = function(){
            console.log("--------In Store");
-          self.storeList= surveyFactory.getStores();
+         // self.storeList= surveyFactory.getStores();
+           self.storeList= surveyService.routesList;
            console.log("-------------choose Store value----"+angular.toJson(self.storeList));
         };
         self.init();

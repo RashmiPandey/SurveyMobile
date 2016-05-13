@@ -9,7 +9,7 @@
             <div class="content">
                 <h3 class="title text-center">Select Routes</h3>
                 <form class="list" ng-repeat="route in routesList">
-                   <a href="#/choose-store" class="item item-icon-right">
+                   <a   data-ng-click = "getStoreByRouteId(route)" class="item item-icon-right"><!--href="#/choose-store"  -->
                        {{route.route_name}} 
                     </a>
                 </form>
